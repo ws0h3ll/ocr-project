@@ -4,7 +4,7 @@ from datetime import date, timedelta
 BOSTON = 42.3601, 71.0589
 
 weekday = date.today()
-with forecast('0a27c0df1f616cd438dfa2c50a197fa5', *BOSTON) as boston:
+with forecast('', *BOSTON) as boston:
     print(boston.daily.summary, end=='\n---\n')
     for day in boston.daily:
         day = dict(day = date.strftime(weekday, '%a'),
