@@ -1,6 +1,6 @@
 import pafy, vlc
 url = str(raw_input())
-video = pafy.new(str(url))
+video = pafy.new(url)
 best = video.getbest()
 playurl = best.url()
 Instance = vlc.Instance()
